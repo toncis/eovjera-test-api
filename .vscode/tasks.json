@@ -1,0 +1,39 @@
+{
+    "version": "2.0.0", 
+    "tasks": [
+        {
+            "label": "build",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/eovjera.test.webapi/eovjera.test.webapi.csproj"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "Publish eOvjera TEST WebAPI release for production depoyment",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "publish",
+                "${workspaceFolder}/eovjera.test.webapi/eovjera.test.webapi.csproj",
+                "--configuration",
+                "Release"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "Publish eOvjera TEST WebAPI debug for test depoyment",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "publish",
+                "${workspaceFolder}/eovjera.test.webapi/eovjera.test.webapi.csproj",
+                "--configuration",
+                "Debug"
+            ],
+            "problemMatcher": "$msCompile"
+        }
+    ]
+}

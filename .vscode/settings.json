@@ -1,0 +1,38 @@
+{
+    // [Editor]
+    "editor.wordWrap": "off",
+    "editor.minimap.enabled": false,
+    "editor.insertSpaces": true,
+    "editor.tabSize": 4,
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": "comment, punctuation.definition.comment",
+                "settings": {
+                    "foreground": "#5C6370"
+                }
+            },
+            {
+                "scope": "comment.line.double-slash,comment.block.documentation",
+                "settings": {
+                    "fontStyle": "italic"
+                }
+            }
+        ]
+    },
+    
+    // [Files]
+    "files.watcherExclude": {
+        "**/.git/objects/**": true,
+        "**/.git/subtree-cache/**": true,
+        "**/node_modules/*/**": true
+    }, 
+
+    // [Spellcheck]
+    "spellright.language": "hr",
+    "spellright.documentTypes": [
+        "markdown",
+        "latex",
+        "plaintext"
+    ]
+}

@@ -1,0 +1,23 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace eOvjera.Common.Email
+{
+    public class EmailConfiguration : IEmailConfiguration
+    {
+        public string SmtpServer { get; set; }
+        public int SmtpPort { get; set; }
+        public string SmtpUsername { get; set; }
+        public string SmtpPassword { get; set; }
+        public string SmtpUserDomain { get; set; }
+        public string SmtpConnectionSecurity { get; set; }
+        public string SmtpAuthenticationMethod { get; set; }
+        public string FromMailAddress { get; set; }
+
+        public string PopServer { get; set; }
+        public int PopPort { get; set; }
+        public string PopUsername { get; set; }
+        public string PopPassword { get; set; }
+    }
+}
